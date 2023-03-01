@@ -31,14 +31,13 @@ function fetchAPIData(pageNumber)
 
 function loadPrev()
 {
-    if(pageNumber <= 1)
+    if(pageNumber == 1)
     {
-        // prevbtn.disabled = true;
+        prevbtn.disabled = true;
     }
     else
     {
-        // prevbtn.disabled = false;
-
+        prevbtn.disabled = false;
         pageNumber--;
         let issues = document.querySelector(".issues")
         let items = document.getElementsByClassName("item")
